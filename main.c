@@ -2,10 +2,11 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/fcntl.h>
+#include <sys/wait.h>
 
 int main() {
 
-    FILE* out = fopen( "pipe.txt", "w");
+    FILE* out = fopen( "pipe.txt", "a");
     char buffer[128];
 
     int fd[2];
@@ -34,7 +35,12 @@ int main() {
 
             //child a should close input.
             close( fd[0] );
-            write(fd[1], "C", 2 );
+            write(fd[1], "B", 2 );
+
+            //DEBUG:
+
+            perror("B branch has executed");
+
             //fprintf( out, "B" );
             break;
 
@@ -58,6 +64,11 @@ int main() {
                     //code for child b
                     close( fd[0] );
                     write(fd[1], "C", 2 );
+
+                    //DEBUG:
+
+                    perror("C branch has executed");
+
                     //fprintf( out, "C");
                     break;
 
@@ -65,13 +76,21 @@ int main() {
                     //code for parent
                     close( fd[1] );
 
+                    //double wait to ensure both children terminate first?
+                    wait(NULL);
+                    wait(NULL);
                     read( fd[0], buffer, sizeof(buffer) );
-                    fprintf(out, buffer);
+                    fprintf( out, "A");
+
+                    //DEBUG:
+
+                    perror("A branch has executed");
+
+
+                    fprintf( out, buffer);
                     break;
             }
 
-            //we shouldn't ever actually get here
-            perror("Something has gone terribly wrong with your switches.  Unknown PID error: ");
             break;
 
     }
