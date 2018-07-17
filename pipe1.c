@@ -10,7 +10,7 @@ int main() {
 
     //fopen returns FILE*, open returns file descriptors.
     //int fd = open( "pipe.txt", O_WRONLY | O_TRUNC| O_CREAT, S_IWGRP );
-    FILE* out = fopen( "pipe.txt", "w");
+    FILE* out = fopen( "pipe1.txt", "w");
     int fd[2];
     pipe( fd );
 
