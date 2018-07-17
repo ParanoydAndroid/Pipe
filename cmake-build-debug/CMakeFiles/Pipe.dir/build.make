@@ -57,38 +57,38 @@ include CMakeFiles/Pipe.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Pipe.dir/flags.make
 
-CMakeFiles/Pipe.dir/main.c.o: CMakeFiles/Pipe.dir/flags.make
-CMakeFiles/Pipe.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Bkama/CLionProjects/Pipe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Pipe.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Pipe.dir/main.c.o   -c /cygdrive/c/Users/Bkama/CLionProjects/Pipe/main.c
+CMakeFiles/Pipe.dir/pipe1.c.o: CMakeFiles/Pipe.dir/flags.make
+CMakeFiles/Pipe.dir/pipe1.c.o: ../pipe1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Bkama/CLionProjects/Pipe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Pipe.dir/pipe1.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Pipe.dir/pipe1.c.o   -c /cygdrive/c/Users/Bkama/CLionProjects/Pipe/pipe1.c
 
-CMakeFiles/Pipe.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Pipe.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/Bkama/CLionProjects/Pipe/main.c > CMakeFiles/Pipe.dir/main.c.i
+CMakeFiles/Pipe.dir/pipe1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Pipe.dir/pipe1.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/Bkama/CLionProjects/Pipe/pipe1.c > CMakeFiles/Pipe.dir/pipe1.c.i
 
-CMakeFiles/Pipe.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Pipe.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/Bkama/CLionProjects/Pipe/main.c -o CMakeFiles/Pipe.dir/main.c.s
+CMakeFiles/Pipe.dir/pipe1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Pipe.dir/pipe1.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/Bkama/CLionProjects/Pipe/pipe1.c -o CMakeFiles/Pipe.dir/pipe1.c.s
 
-CMakeFiles/Pipe.dir/main.c.o.requires:
+CMakeFiles/Pipe.dir/pipe1.c.o.requires:
 
-.PHONY : CMakeFiles/Pipe.dir/main.c.o.requires
+.PHONY : CMakeFiles/Pipe.dir/pipe1.c.o.requires
 
-CMakeFiles/Pipe.dir/main.c.o.provides: CMakeFiles/Pipe.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/Pipe.dir/build.make CMakeFiles/Pipe.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/Pipe.dir/main.c.o.provides
+CMakeFiles/Pipe.dir/pipe1.c.o.provides: CMakeFiles/Pipe.dir/pipe1.c.o.requires
+	$(MAKE) -f CMakeFiles/Pipe.dir/build.make CMakeFiles/Pipe.dir/pipe1.c.o.provides.build
+.PHONY : CMakeFiles/Pipe.dir/pipe1.c.o.provides
 
-CMakeFiles/Pipe.dir/main.c.o.provides.build: CMakeFiles/Pipe.dir/main.c.o
+CMakeFiles/Pipe.dir/pipe1.c.o.provides.build: CMakeFiles/Pipe.dir/pipe1.c.o
 
 
 # Object files for target Pipe
 Pipe_OBJECTS = \
-"CMakeFiles/Pipe.dir/main.c.o"
+"CMakeFiles/Pipe.dir/pipe1.c.o"
 
 # External object files for target Pipe
 Pipe_EXTERNAL_OBJECTS =
 
-Pipe.exe: CMakeFiles/Pipe.dir/main.c.o
+Pipe.exe: CMakeFiles/Pipe.dir/pipe1.c.o
 Pipe.exe: CMakeFiles/Pipe.dir/build.make
 Pipe.exe: CMakeFiles/Pipe.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/Bkama/CLionProjects/Pipe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Pipe.exe"
@@ -99,7 +99,7 @@ CMakeFiles/Pipe.dir/build: Pipe.exe
 
 .PHONY : CMakeFiles/Pipe.dir/build
 
-CMakeFiles/Pipe.dir/requires: CMakeFiles/Pipe.dir/main.c.o.requires
+CMakeFiles/Pipe.dir/requires: CMakeFiles/Pipe.dir/pipe1.c.o.requires
 
 .PHONY : CMakeFiles/Pipe.dir/requires
 

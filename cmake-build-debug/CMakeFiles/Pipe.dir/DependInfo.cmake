@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/cygdrive/c/Users/Bkama/CLionProjects/Pipe/main.c" "/cygdrive/c/Users/Bkama/CLionProjects/Pipe/cmake-build-debug/CMakeFiles/Pipe.dir/main.c.o"
+  "/cygdrive/c/Users/Bkama/CLionProjects/Pipe/pipe1.c" "/cygdrive/c/Users/Bkama/CLionProjects/Pipe/cmake-build-debug/CMakeFiles/Pipe.dir/pipe1.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

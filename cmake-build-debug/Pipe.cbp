@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/Bkama/CLionProjects/Pipe/main.c">
+		<Unit filename="/cygdrive/c/Users/Bkama/CLionProjects/Pipe/pipe1.c">
 			<Option target="Pipe"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Bkama/CLionProjects/Pipe/CMakeLists.txt">

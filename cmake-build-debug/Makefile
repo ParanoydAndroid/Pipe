@@ -123,32 +123,32 @@ Pipe/fast:
 	$(MAKE) -f CMakeFiles/Pipe.dir/build.make CMakeFiles/Pipe.dir/build
 .PHONY : Pipe/fast
 
-main.o: main.c.o
+pipe1.o: pipe1.c.o
 
-.PHONY : main.o
+.PHONY : pipe1.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/Pipe.dir/build.make CMakeFiles/Pipe.dir/main.c.o
-.PHONY : main.c.o
+pipe1.c.o:
+	$(MAKE) -f CMakeFiles/Pipe.dir/build.make CMakeFiles/Pipe.dir/pipe1.c.o
+.PHONY : pipe1.c.o
 
-main.i: main.c.i
+pipe1.i: pipe1.c.i
 
-.PHONY : main.i
+.PHONY : pipe1.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/Pipe.dir/build.make CMakeFiles/Pipe.dir/main.c.i
-.PHONY : main.c.i
+pipe1.c.i:
+	$(MAKE) -f CMakeFiles/Pipe.dir/build.make CMakeFiles/Pipe.dir/pipe1.c.i
+.PHONY : pipe1.c.i
 
-main.s: main.c.s
+pipe1.s: pipe1.c.s
 
-.PHONY : main.s
+.PHONY : pipe1.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/Pipe.dir/build.make CMakeFiles/Pipe.dir/main.c.s
-.PHONY : main.c.s
+pipe1.c.s:
+	$(MAKE) -f CMakeFiles/Pipe.dir/build.make CMakeFiles/Pipe.dir/pipe1.c.s
+.PHONY : pipe1.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Pipe"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... pipe1.o"
+	@echo "... pipe1.i"
+	@echo "... pipe1.s"
 .PHONY : help
 
 

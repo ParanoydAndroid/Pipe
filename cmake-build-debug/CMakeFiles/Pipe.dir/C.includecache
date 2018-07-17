@@ -6,11 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/Bkama/CLionProjects/Pipe/main.c
+/cygdrive/c/Users/Bkama/CLionProjects/Pipe/pipe1.c
 stdio.h
 -
 unistd.h
 -
 sys/wait.h
+-
+stdlib.h
 -
 

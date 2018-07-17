@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Pipe.dir/main.c.o"
+  "CMakeFiles/Pipe.dir/pipe1.c.o"
   "Pipe.pdb"
   "Pipe.exe"
   "libPipe.dll.a"

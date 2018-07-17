@@ -6,7 +6,7 @@
 int main() {
 
     const size_t WRITE_SIZE = 25;
-    char buffer[WRITE_SIZE + 1];
+    char buffer[2 * WRITE_SIZE + 1];
 
     //fopen returns FILE*, open returns file descriptors.
     //int fd = open( "pipe.txt", O_WRONLY | O_TRUNC| O_CREAT, S_IWGRP );
