@@ -9,11 +9,7 @@
 /cygdrive/c/Users/Bkama/CLionProjects/Pipe/main.c
 stdio.h
 -
-stdio.h
--
 unistd.h
--
-sys/fcntl.h
 -
 sys/wait.h
 -

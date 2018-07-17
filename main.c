@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/wait.h>
+#include <stdlib.h>
 
 int main() {
 
     const size_t WRITE_SIZE = 25;
-    char buffer[2 * WRITE_SIZE + 1];
+    char buffer[WRITE_SIZE + 1];
 
     //fopen returns FILE*, open returns file descriptors.
     //int fd = open( "pipe.txt", O_WRONLY | O_TRUNC| O_CREAT, S_IWGRP );
@@ -22,7 +23,7 @@ int main() {
 
             // This is a fail state
             perror( "Error forking child a: ");
-            return  -1;
+            exit( EXIT_FAILURE );
 
         case 0:
 
@@ -39,25 +40,20 @@ int main() {
             //Now spawn a second child only in the parent code
             pid_b = fork();
 
-            //Here's where it gets ugly.  I don't love the nestedness here
-            //TODO: refactor?
             switch (pid_b) {
 
                 case -1:
 
                     perror( "Error on second fork: ");
-                    return -1;
-
+                    exit( EXIT_FAILURE );
 
                 case 0:
-
                     //code for child b
                     close( fd[0] );
                     write( fd[1], "C is writing to the pipe\n", WRITE_SIZE );
                     break;
 
                 default:
-
                     //code for parent
                     wait(&pid_a);
                     wait(&pid_b);
@@ -66,12 +62,13 @@ int main() {
                     write( fd[1], "\0", 1 );
                     close( fd[1] );
                     read( fd[0], buffer, sizeof(buffer) );
-                    fwrite ( "A is writing to the pipe\n", 1, 25, out );
+                    fwrite ( "A is writing to the file\n", 1, 25, out );
 
                     //Reminder, "buffer" decays into a pointer to its first element.
                     // `buffer` is the same as referencing `&buffer[0]'
                     fwrite( buffer, 1, sizeof(buffer) - 1, out );
                     break;
+
             }
 
             break;
